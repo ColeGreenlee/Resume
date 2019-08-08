@@ -4,8 +4,6 @@ author:
 title: 'Cole Greenlee - Résumé'
 ---
 
-[2]{}
-
 <Cole@Greenlee.io>
 
 [(952) 500-1448](tel:+19525001448)
@@ -19,16 +17,12 @@ title: 'Cole Greenlee - Résumé'
 Education
 =========
 
-[2]{}
-
 University of Minnesota Computer Science B.A.
 
 *Expected Graduation May 2022*
 
 Technical Proficiency
 =====================
-
-[2]{}
 
 -   Java (Spring Framework)
 
