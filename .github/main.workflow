@@ -5,9 +5,6 @@ workflow "LaTeX Conversion" {
 
 action "PDF" {
   uses = "maxheld83/pandoc@v0.1.0"
-  env = {
-    OUT_DIR = "~"
-  }
   args = [
     "--standalone",
     "--output=Resume.pdf",
@@ -17,9 +14,6 @@ action "PDF" {
 
 action "Markdown" {
   uses = "maxheld83/pandoc@v0.1.0"
-  env = {
-    OUT_DIR = "~"
-  }
   args = [
     "--standalone",
     "--output=README.md",
