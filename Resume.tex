@@ -1,0 +1,134 @@
+\documentclass{article}
+% Packages Required
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{enumitem}
+
+% Page Size and Margin Setup
+\geometry{
+ a4paper,
+ total={190mm,277mm},
+ left=10mm,
+ top=10mm
+ }
+
+% Spacing Settings
+\setlength{\parindent}{0.25em}
+\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{0.5}
+
+% Title Formatting
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+% Subsection Title Formatting
+\titleformat{\subsection}
+{\bfseries\large}
+{}
+{0em}
+{}
+
+% Subsubsection Title Formating
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[]
+
+% Modified Title Generation
+\renewcommand{\maketitle}{
+\begin{center}
+{\huge\bfseries\theauthor}
+\end{center}
+\begin{center}
+\begin{multicols}{4}
+\href{mailto:Cole@Greenlee.io}{Cole@Greenlee.io}
+\href{https://Greenlee.io}{https://Greenlee.io}
+\href{https://GitHub.com/ColeGreenlee/}{GitHub.com/ColeGreenlee}
+\href{tel:+19525001448}{(952) 500-1448}
+\end{multicols}
+\end{center}
+}
+
+\title{Cole Greenlee - R\'esum\'e}
+\author{Cole Greenlee}
+
+\begin{document}
+\fontfamily{phv}
+\selectfont
+\maketitle
+
+\section{Education}
+\begin{multicols}{2}
+\begin{flushleft}
+\textbf{University of Minnesota Computer Science B.A.}
+\end{flushleft}
+\begin{flushright}
+\textit{Expected Graduation May 2022}
+\end{flushright}
+\end{multicols}
+
+\section{Technical Proficiency}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*]
+	\item Java (Spring Framework)
+	\item C\# (ASP.NET, .NET Core)
+	\item SQL Databases (MSSQL, MySQL, NoSQL)
+	\item Docker
+	\item Linux System
+	\item Unit Testing
+	\item Application Deployment
+	\item Git Development Workflow
+	\item Technical Documentation (Markdown, LaTeX)
+\end{itemize}
+\end{multicols}
+
+\section{Relevant Experience}
+\subsection{Innovative Computer Professionals Inc.}
+\subsubsection{Software Developer \& Offshore Team Manager}
+Prior Lake, MN | \textit{June 2015 - Present}
+\begin{itemize}[leftmargin=*]
+\item Developed a back office ASP.NET MVC web application for financial institution supervisors and customer support representatives to issue credit cards and company payroll.
+\item Designed monitoring and alert systems in Java for ATM machines and payment processing servers operating on a global scale.
+\item Obtained OWASP Top 10 Certification in compliance with company’s PCI DSS Certification.
+\item Independently managed and planned delivery schedules for company’s offshore UI development team.
+\item Designed, updated, and deployed a collection of customer and company websites.
+\item Wrote technical documentation and end-user manuals for company services and API endpoints.
+\end{itemize}
+\subsection{FIRST FRC Team 2169}
+\subsubsection{Team Captain}
+Savage, MN | \textit{May 2017 – May 2018}
+\begin{itemize}[leftmargin=*]
+\item Managed a K-12 robotics enterprise comprised of nearly 300 students across 5 separate programs in year-round events, training sessions, and competitions.
+\item Led team development and outreach workshops at regional events and the FIRST World Championships.
+\item Presented team information and accomplishments to a panel of judges with two teammates in a formal interview setting.
+\item Developed a scalable framework and plan for spreading robotics programs to The Boys and Girls Club of America nationwide.
+\item Directed a recurring schedule of over 220 team events impacting over 250,000 people annually.    
+\end{itemize}
+\subsubsection{Head of Business}
+May 2016 – May 2017
+\begin{itemize}[leftmargin=*]
+\item Lead department in writing a business plan outlining team structure, finances, and impact goals.
+\item Met with, and presented to, sponsors to acquire monetary and material support on a regular basis.
+\item Organized team planning of off-season competition for 87 teams and over 2,000 guests.
+\end{itemize}
+
+\section{Personal Experience}
+\subsection{Projects}
+\begin{itemize}[leftmargin=*]
+\item Member of ASU’s cybersecurity club and competitive CTF team, The PwnDevils.
+\end{itemize}
+\subsection{Homelab}
+\begin{itemize}[leftmargin=*]
+\item Integrated whole-home solution for NAS file storage, Active Directory authentication, and networking.
+\item Developed and configured portfolio website using cloud-hosted Linux VPS.
+\item Provided a high bandwidth VPN service to over 100 individuals using OpenVPN and WireGuard.
+\end{itemize}
+\end{document}
