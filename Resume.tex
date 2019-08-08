@@ -1,4 +1,5 @@
 \documentclass{article}
+
 % Packages Required
 \usepackage{titlesec}
 \usepackage{titling}
@@ -8,20 +9,21 @@
 \usepackage{geometry}
 \usepackage{enumitem}
 \pagenumbering{gobble}
+
 % Page Size and Margin Setup
 \geometry{
- a4paper,
- total={190mm,277mm},
- left=10mm,
- top=10mm
- }
+a4paper,
+total={190mm,277mm},
+left=10mm,
+top=10mm
+}
 
 % Spacing Settings
 \setlength{\parindent}{0.25em}
 \setlength{\parskip}{0.0em}
 \renewcommand{\baselinestretch}{0.5}
 
-% Title Formatting
+% Section Title Formatting
 \titleformat{\section}
 {\Large\bfseries}
 {}
@@ -44,26 +46,27 @@
 
 % Modified Title Generation
 \renewcommand{\maketitle}{
-\begin{center}
 {\huge\bfseries\theauthor}
-\end{center}
-\begin{center}
-\begin{multicols}{4}
-\href{mailto:Cole@Greenlee.io}{Cole@Greenlee.io}
-\href{https://Greenlee.io}{https://Greenlee.io}
-\href{https://GitHub.com/ColeGreenlee/}{GitHub.com/ColeGreenlee}
-\href{tel:+19525001448}{(952) 500-1448}
-\end{multicols}
-\end{center}
 }
 
+% Title Settings
 \title{Cole Greenlee - R\'esum\'e}
 \author{Cole Greenlee}
 
 \begin{document}
 \fontfamily{phv}
 \selectfont
-\maketitle
+\begin{multicols}{2}
+\begin{description}[leftmargin=*]
+\item\maketitle
+\item\href{mailto:Cole@Greenlee.io}{Cole@Greenlee.io}
+\item\href{tel:+19525001448}{(952) 500-1448}
+\item\href{https://Greenlee.io}{https://Greenlee.io}
+\item\href{https://GitHub.com/ColeGreenlee/}{GitHub.com/ColeGreenlee}
+\item 1048 Fuller Avenue St. Paul, MN 55104
+\end{description}
+\end{multicols}
+
 \section{Education}
 \vspace{-1.5em}
 \begin{multicols}{2}
@@ -114,7 +117,7 @@ Savage, MN | \textit{May 2017 – May 2018}
 \item Directed a recurring schedule of over 220 team events impacting over 250,000 people annually.    
 \end{itemize}
 \subsubsection{Head of Business}
-May 2016 – May 2017
+Savage, MN | May 2016 – May 2017
 \begin{itemize}[leftmargin=*]
 \item Lead department in writing a business plan outlining team structure, finances, and impact goals.
 \item Met with, and presented to, sponsors to acquire monetary and material support on a regular basis.
