@@ -10,7 +10,7 @@ action "PDF" {
   }
   args = [
     "--standalone",
-    "--output=~/Resume.pdf",
+    "--output=Resume.pdf",
     "Resume.tex",
   ]
 }
@@ -22,7 +22,7 @@ action "Markdown" {
   }
   args = [
     "--standalone",
-    "--output=~/README.md",
+    "--output=README.md",
     "Resume.tex",
   ]
 }
