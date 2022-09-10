@@ -46,8 +46,8 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\techSkillItem}[2]{\item{\small{\textbf{#1: }{#2}}}\vspace{-5pt}}
-\newcommand{\techSkillList}[1]{\begin{itemize}[leftmargin=0.15in]#1\end{itemize}\vspace{-15pt}}
-\newcommand{\blogLinkItem}[3]{\item{\begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}\href{#2}{\textit{``#1``} \small{\faLink}} & \small{#3}\end{tabular*}\vspace{-2pt}}}
+\newcommand{\techSkillList}[1]{\begin{itemize}[leftmargin=0.15in]#1\end{itemize}\vspace{-10pt}}
+\newcommand{\blogLinkItem}[3]{\item{\begin{tabular*}{0.95\textwidth}[t]{l@{\extracolsep{\fill}}r}\href{#2}{\small{\textit{``#1``}} \small{\faLink}} & \small{#3}\end{tabular*}\vspace{-2pt}}}
 \newcommand{\blogLinkList}[1]{\begin{itemize}[leftmargin=0.15in]#1\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSection}[2]{\section{#1}\begin{itemize}[leftmargin=0.15in, label={}]#2\end{itemize}}
 \newcommand{\resumeItemHeading}[4]{\vspace{-2pt}\item{\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2\\\textit{\small#3} & \textit{\small #4}\\\end{tabular*}\vspace{-7pt}}}
@@ -72,21 +72,29 @@
 
 % Education
 \resumeSection{Education}{
-	\resumeItemHeading{University of Minnesota - Twin Cities}{Minneapolis, MN}{Bachelor of Applied Sciences: Information Technology Infrastructure - DevOps Focus}{Aug. 2018 -- Present}
+	\resumeItemHeading{University of Minnesota - Twin Cities}{Aug. 2018 -- May 2023}{Bachelor of Applied Sciences: Information Technology Infrastructure - DevOps Focus}{Minneapolis, MN}
 }
 
 % Technical Proficiencies
 \section{Technical Proficiencies}
 \techSkillList{
-	\techSkillItem{Languages}{Java, Groovy, C\#, Python, C, JavaScript, TypeScript, HTML, CSS, R}
-	\techSkillItem{Frameworks}{Angular, React, .NET MVC, Django, Flask}
+	\techSkillItem{Languages}{Java, Groovy, Python, C, C\#, JavaScript, TypeScript, HTML, CSS, R}
+	\techSkillItem{Frameworks}{ React, Angular, .NET MVC, Django, Flask}
 	\techSkillItem{Databases}{MSSQL, MySQL, PostgreSQL, MongoDB}
 	\techSkillItem{Tools}{Git, Docker, Jenkins CI/CD, AWS, JIRA}
 }
 
 % Professional Experience
 \resumeSection{Professional Experience}{
-	\resumeItemHeading{Software Engineer Intern}{Jan. 2020 -- Present}{Infinite Campus}{Blaine, MN}
+	\resumeItemHeading{Software Engineer Intern}{June. 2022 -- Present}{Palo Alto Networks}{Santa Clara, CA}
+	\resumeItemList{
+		\resumeItem{Developed and presented plans for new product features to leadership}
+		\resumeItem{Enhanced web accessibility features in a React dashboard application by implementing screen reader compatibility and enabling keyboard navigation.}
+		\resumeItem{Wrote automated unit and end-to-end tests for components using Jest and Cypress}
+		\resumeItem{Authored technical documentation for existing and upcoming feature development.}
+	}
+
+	\resumeItemHeading{Software Engineer Intern}{Jan. 2020 -- Apr. 2022}{Infinite Campus}{Blaine, MN}
 	\resumeItemList{
 		\resumeItem{Developed new features in Angular applications used for financial reporting in 2,000 school districts in 45 states.}
 		\resumeItem{Created new REST API endpoints and features using the Spring framework.}
@@ -94,7 +102,7 @@
 		\resumeItem{Trained new intern team members in company's tech stack and development practices.}
 	}
 
-	\resumeItemHeading{Software Developer}{Sep. 2020 -- Present}{Pulse Reporting Inc.}{Remote}
+	\resumeItemHeading{Software Developer}{Sep. 2020 -- Mar. 2022}{Pulse Reporting Inc.}{Remote}
 	\resumeItemList{
 		\resumeItem{Lead a startup company's web application development efforts using Angular.}
 		\resumeItem{Developed a REST API service using the Djano Rest Framework}
@@ -105,7 +113,7 @@
 
 	\resumeItemHeading{Software Developer \& Remote Team Manager}{Jun. 2015 -- Jan. 2020}{Innovative Computer Professionals Inc.}{Prior Lake, MN}
 	\resumeItemList{
-		\resumeItem{Developed a multi-institution financial application for credit card issuing, company payroll, and customer support in .NET.}
+		\resumeItem{Developed a financial application for credit card issuing, company payroll, and customer support in .NET.}
 		\resumeItem{Designed an ATM and payment processor monitoring system in Java for servers operating on a global scale.}
 		\resumeItem{Obtained OWASP Top 10 Certification in compliance with company’s PCI DSS Certification.}
 		\resumeItem{Independently managed and planned delivery schedules for company’s offshore UI development team.}
@@ -116,20 +124,20 @@
 
 % Projects
 \resumeSection{Projects}{
-	\resumeProjectHeading{\textbf{Blog} $|$ \emph{Authored writeups on a myriad of technical topics}}{Jan. 2022 -- Present}
-	\blogLinkList{
-		% Test Post List - Need to replace with real posts
-		\blogLinkItem{Creating an Automated Static Site with Hugo}{https://greenlee.io/posts/creating-an-automated-hugo-site/}{12/10/2021}
-		\blogLinkItem{Building ATS-Safe LaTeX Resumes}{https://greenlee.io/posts/building-an-ats-safe-latex-resume/}{01/10/2022}
-		\blogLinkItem{100 Days of LeetCode - A Retrospectice}{https://greenlee.io/posts/100-days-of-leetcode-retrospective/}{02/01/2022}
-		\blogLinkItem{Planning a Project: Before the Code}{https://greenlee.io/posts/planning-a-project-before-the-code/}{02/03/2022}
-	}
+	% \resumeProjectHeading{\textbf{Blog} $|$ \emph{Authored writeups on a myriad of technical topics}}{Jan. 2022 -- Present}
+	% \blogLinkList{
+	% 	% Test Post List - Need to replace with real posts
+	% 	\blogLinkItem{Creating an Automated Static Site with Hugo}{https://greenlee.io/posts/creating-an-automated-hugo-site/}{12/10/2021}
+	% 	\blogLinkItem{Building ATS-Safe LaTeX Resumes}{https://greenlee.io/posts/building-an-ats-safe-latex-resume/}{01/10/2022}
+	% 	\blogLinkItem{100 Days of LeetCode - A Retrospectice}{https://greenlee.io/posts/100-days-of-leetcode-retrospective/}{02/01/2022}
+	% 	\blogLinkItem{Planning a Project: Before the Code}{https://greenlee.io/posts/planning-a-project-before-the-code/}{02/03/2022}
+	% }
 
 	\resumeProjectHeading{\textbf{HomeLab} $|$ \emph{My Infrastructure as Code Respository}}{Mar. 2018 -- Present}
 	\resumeItemList{
 		\resumeItem{Automated server configuration using Ansible.}
+		\resumeItem{Standardized deployment and configuration processes.}
 		\resumeItem{Configured deployment stacks using containerized applications.}
-		\resumeItem{Worked to standardize deployment configuration process.}
 	}
 }
 \end{document}
